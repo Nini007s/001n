@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">內容 
+    <!-- <meta name="viewport"視口 因大家的瀏覽器、電子設備也不同 -->
+    <!-- <meta>是告訴搜尋引擎我們的網頁在幹嘛 -->
+
+    <title>妮妮的網頁</title>
+    <style>
+        body{
+            background-color: peachpuff
+        }
+    </style>
+</head>
+<body>
+    <h1>用來測試的網頁</h1>
+    <img src="./bee2.png"width="300"height="300">
+    <!-- width="300"height="300" 長寬 -->
+    <h2>我畫的蜜蜂</h2>
+    <img src="https://img3.stockfresh.com/files/p/penguinline/m/52/3911144_stock-vector-cute-bee-flying.jpg" width="300"height="300">
+    <hr>
+    <h1><b><i>我畫的蜜蜂可愛嗎</i></b></h1>
+    <!-- 大標加粗體加斜體 -->
+    <b>--粗體--</b>
+    <br>
+    <i>--斜體--</i><br>
+    <!-- <i>斜體</i> -->
+    <!-- control+k c變註解 -->
+    <b><i>粗體加斜體</i></b>
+    <br>
+    <hr>
+    <!-- 縮排tab往右 shift+tab往左 -->
+    <a href="https://www.google.com.tw/?hl=zh_TW"target="_blank"><h1>Google</h1></a>
+    <a href="./index.html"target="_blank"><b><i>test網頁</i></b></a><br><br><br>
+    <!-- "連結"target="_blank" 從新視窗開啟 -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/X_8LfnWbtO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>我媽比我還緊張</iframe>
+    <br><br>
+    <video src="我媽比我還生氣.mp4"controls width="560">無法載入影片</video>
+
+<ol type="A">
+    <!-- 順序ABC -->
+     <li>Today</li>
+     <li>Tomorrow</li>
+     <li>Yesterday</li>
+</ol>
+
+<ol type="I">
+    <!-- 羅馬數字順序 -->
+    <li>2000</li>
+    <li>3000</li>
+    <li>4000</li>
+</ol>
+
+    <ul>
+        <li>Red</li>
+        <li>Blue</li>
+        <li>Yellow</li>
+    </ul>
+
+
+
+<input type="password"placeholder="請輸入密碼">
+<br>
+<input type="text" placeholder="請輸入名字">
+<!-- placeholder=""出現在框框內的文字 -->
+<button>送出</button>
+<br><br>
+<input type="date" >
+<!-- 選擇年月份 -->
+<br><br>
+<input type="range">
+<!-- 程度拉桿 -->
+<br><br>
+<input type="file">
+<!-- 選擇檔案 -->
+<div>
+    <table style="border: 5px rgb(238, 84, 84) dashed" cellpadding="30" 
+    border='1'>
+    <!-- board:邊框粗度   #000邊框顏色     線條樣式 > 
+    <!-cellpadding框框整體大小 board=___-虛線內的實線-->
+    <tr><!--第一行 -->
+        <td>Poki</td>
+        <td>Nini</td>
+        <td>Fish</td>
+        <!-- td全都同一行 tr=一行-->
+    </tr>
+    <tr><!--第二行-->
+        <td>1/31</td>
+        <td>9/21</td>
+        <td>1/04</td>
+    </tr>
+    <tr><!--第三行-->
+        <td>魔羯</td>
+        <td>處女</td>
+        <td>魔羯</td>
+    </tr>
+    </table>
+</div>
+<br><br><br>
+<div> 
+    <table style="border:2px #000 dashed" rules="cols #000 dashed"
+     cellpadding="10";boarder width="400">
+        
+        <tr style="background-color:rgb(221, 221, 184)"> 
+            <!---table row(tr) / table data(td)實際單元格資料 / table header(th)表格欄位的標題-->
+            <th>組別</th>
+            <th>組員</th>
+            <th>學號</th>
+            <th>總人數</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>小明<br>小雨</td>
+            <td>107012001<br>107012002</td>
+            <td rowspan="2"><span style="color:crimson">4</span></td>
+            <!---rowspan="2" 表示從這一列開始往下合併至下一列 (共2列) 後面省略td-->
+            <!--顯示水平線就寫rules="rows"，只顯示垂直線就寫"cols"，全部 "all"-->
+        </tr>
+        <tr>
+            <td >2</td>
+            <td>小華<br>小安</td>
+            <td>107012003<br>107012004</td>
+        </tr>
+    </table>
+   </div>
+
+
+</body>
+</html>
