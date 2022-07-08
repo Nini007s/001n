@@ -1,0 +1,37 @@
+
+    body{ background-color:rgb(227, 241, 166) }
+
+    p{
+    color: rgb(38, 12, 233);
+ }
+.idol{
+    color:rgb(5, 146, 246);
+    background-color: black;
+}
+.song{
+    color: rgb(25, 120, 199);
+    background-color: black;
+}
+         /* .class項目名稱{顏色} 指定項目顏色改變 */
+#css-h1{
+    color: rgb(27, 210, 173);
+}
+        /* #id項目名稱 改變項目顏色 */
+ 
+        /* *{color: ;} 套用在html所有的文字backgroud背景顏色 */
+[type]{
+    color: rgb(248, 3, 105);
+}
+        /* 示範在順序列、輸入框 */
+        /* [type]{color}套用在有type的所有文字 [可換其他標籤]*/
+
+
+h1:hover{
+    background-color: pink ;
+}
+td:hover{
+    background-color: red;
+}
+th:hover{background-color: blue;
+    
+}

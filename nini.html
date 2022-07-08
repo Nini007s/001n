@@ -8,14 +8,14 @@
     <!-- <meta>是告訴搜尋引擎我們的網頁在幹嘛 -->
 
     <title>妮妮的網頁</title>
-    <style>
-        body{
-            background-color: peachpuff
-        }
-    </style>
+       
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入外部css檔案(style) -->
 </head>
 <body>
-    <h1>用來測試的網頁</h1>
+    <div style=" position: fixed; top:100px; width:80px; height:60px;background-color: yellow;"></div>
+    <!-- top距離上方100像素的地方 -->
+<h1>用來測試的網頁</h1>
     <img src="./bee2.png"width="300"height="300">
     <!-- width="300"height="300" 長寬 -->
     <h2>我畫的蜜蜂</h2>
@@ -81,9 +81,9 @@
     <!-- board:邊框粗度   #000邊框顏色     線條樣式 > 
     <!-cellpadding框框整體大小 board=___-虛線內的實線-->
     <tr><!--第一行 -->
-        <td>Poki</td>
-        <td>Nini</td>
-        <td>Fish</td>
+        <th>Poki</th>
+        <th>Nini</th>
+        <th>Fish</th>
         <!-- td全都同一行 tr=一行-->
     </tr>
     <tr><!--第二行-->
@@ -95,6 +95,8 @@
         <td>魔羯</td>
         <td>處女</td>
         <td>魔羯</td>
+        <td colspan="3">三人行</td>
+        <!-- colspan合併表格 -->
     </tr>
     </table>
 </div>
@@ -126,6 +128,66 @@
     </table>
    </div>
 
+<div style="padding: 30px 20px 50px;margin: 100px;width:300Px;border: 5px black dashed;background-color:purple;">
+   <!-- padding內部空間 margin文字框外圍___排版 -->
+   <!-- 20 30 40 50px 文字框順時鐘空間移動   -->
+   <!-- border後直接加 粗度 顏色 線型 -->
+    <h1 style="color:如果這裡也顏色就會蓋過div的顏色;">css</h1>
+    <p>試試看div的顏色</p>
+</div>
+    <img src="bee2.png" width="200px"style="float: right;">
+    <p >這是我畫的蜜蜂他沒有翅膀</p>
+    <!-- float漂浮(3D)+right文字往右移 left往左 -->
+    <br>
+    <p style="display: inline">原本有兩行</p>
+    <p style="display: inline">display inline讓它們變成一行</p>
+    <span style="display: block;">原本只有一行</span>
+    <span style="display:block">display block 讓它們變成兩行</span>
+    <div style=" position: fixed; bottom:100px;right: 5px;width:80px; height:60px;background-color: rgb(0, 255, 115);"></div>
+    <!-- position fixed 可以定位在某個地方 隨這滾輪視窗移動 -->
+    <!-- 排在下面的code要加bottom離最底部多少像素 -->
+    <div style="position: relative; right: 5px;bottom:5px;width: 50px;height: 50px; background-color: blueviolet "></div>
 
-</body>
+<div style=" padding: 30px; border: 5px dashed black;">
+    <div style=" position:relative; padding: 30px; border: 5px dashed black">
+        <div style=" position: absolute; right: 0px; top: 0px; height: 50px; width: 50px; background-color: green;">
+        <!-- position absolute絕對位置 飄浮起來 下面的東西會往上移 -->
+        </div>
+    </div>
+</div>   
+<p style=" position:relative; top:65px; left: 15px; ">我可愛</p>
+<div style=" opacity:0.5;width:80px; border-radius:40px; height:80px; background-color: orange; "></div><br>
+    <p style=" opacity:0.5; width:80px">我更可愛</p>
+    <div style=" opacity:0.5;width:80px; border-radius:20px; height:80px; background-color: orange; "></div><br>
+    <div style=" opacity:0.5;width:80px; border-radius:20px 30px 40px 50px; height:80px; background-color: orange; "></div>            
+
+
+<!-- 放<head>裡面
+    <style>
+        p{color:;}
+        h1{color:;} 
+        /* 可加background color */
+        /* 在head裡面改顏色 所有指定的文字都會變 */
+    </style>
+</head> -->
+<p>會變成藍色嗎</p>
+<h1>大標題會變藍色嗎</h1>
+<table style="border: 5px dashed rgb(242, 78, 78)">
+<h1 id="css-h1">我愛ㄉ歌手們</h1>
+<!-- id用來命名單一元素 -->
+<tr style="border: 5px dashed black">
+<th class="idol">周杰倫</th>
+<th class="idol">周興哲</th>
+<th class="idol">張惠妹</th>
+</tr>
+<tr>
+<td class="song">愛在西元前</td>
+<td class="song">以後別做朋友</td>
+<td class="song">三天三夜</td>
+<!-- class項目 用來命名一些元素-->
+</tr>
+</table>
+
+
+   </body>
 </html>
