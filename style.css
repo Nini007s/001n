@@ -27,7 +27,8 @@
 
 
 h1:hover{
-    background-color: pink ;
+     background-color: rgb(242, 55, 86);
+     width:300px;
 }
 td:hover{
     background-color: red;
@@ -35,3 +36,4 @@ td:hover{
 th:hover{background-color: blue;
     
 }
+/* hover鼠標覆蓋變色 */
