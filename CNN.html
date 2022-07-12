@@ -7,16 +7,90 @@
     <title>Document</title>
 
     <style>
+        /* 選擇器 */
         h2{
             background-color: aqua;
+            width: 190px;
+        }
+        #nini>img{
+            opacity: .3;
+        }
+        /* 簡寫=.數字 */
+        #nini>text{
+            opacity: .5;
+        }
+        /* #nini.j8,text{
+            background-color: rgb(126, 126, 254);
+        } */
+        /* 一次抓兩個區塊 */
+        #nini>span:nth-child(2){
+            background-color: pink;
+        }
+        /* 抓取到第一個span  數字可改(第)2(行) */
+        #nini>span:first-child{
+            background-color: blueviolet;
+        }
+
+        /* div{
+            background-color: aquamarine;
+        } */
+        /* div{
+            background-color: yellow !important; 
+        } */
+        /* 加!important權重變大 以他為主 */
+        
+        #box_model{
+            background-color: blue; 
+            border: 0.3em dashed ;
+            border-top: 3px dashed red;
+            border-right: 3px dashed;
+            border-bottom: 3px dashed red;
+            width: 80px;
+            margin-bottom: 10px;
+            margin-top: 100px;
+            margin-left: 100px;
+            padding: 10px;
+            /* right left */
+            /* padding內距 */
+            display: inline;
+          
+
+        }
+        
+        
+        /* margin-bottom距離下方多少px */
+        #box{
+            background-color: crimson;
+            border: 3px solid;
+            border-top: 3px solid;
+            border-bottom: 3px solid;
+            margin-left: 100px ;
+            margin-top: 100px;
+            padding-bottom: 30px;
+           width: 100px;
+            /* display: none;=下註解 但沒消失 */
+          
+        }
+        /* border-style:outset */
+        #bb{
+            background-color: coral;
+            width: 50px;
         }
     </style>
+<!-- display inline縮成一排(行內) /block分開(塊級) -->
 </head>
 <body>
-    <h1>妮妮的網頁</h1>
-    <img src="./tadpole.png" alt="蝌蚪">
+
+
+    <div id="box_model">來點box </div>
+    <div id="box">多出來的box</div>
+    
+
+   
+    <img src="./tadpole.png" style="position:absolute ;">
     <h2>這是我畫的蝌蚪</h2>
-    <table>
+    <table style="margin-left: 600px; margin-top:250px">
+    <h1 style="margin-left: 650px;">蝌蚪最愛看的卡通</h1>
         <tr>
             <th>珊迪</th>
             <th>海綿寶寶</th>
@@ -32,13 +106,37 @@
             <td>鐵皮屋</td>
         </tr>
         <tr>
-            <td>樹果</td>
+            <td>美味蟹堡</td>
             <td>美味蟹堡</td>
             <td>美味蟹堡</td>
             <td>美味蟹堡</td>
             <td>美味蟹堡</td>
         </tr>
     </table>
+    <div id="nini" class="j8">
+        <!-- 父代表 -->
+        <span>我再試試看</span>
+        <span>太酷了八這個東西</span>
+        
+        <img width="300" src="/NFT02/001n/tadpole.png" alt="蝌蚪">
+        <!-- 在裡面直接加width -->
+        <div class="text"> 
+            <!-- 抓單一元素可以用class id -->
+            <span>如果有很多葡萄就會被串再一起</span>
+        <p>是的船長<img width="300" src="/NFT02/001n/tadpole.png" alt="蝌蚪"></p>
+        </div>
+        <ul>
+            <li>jj8聽起來很厲害</li>
+        </ul>
+        <br><br><br><br><br><br>
+        <!-- ul>li+enter -->
+    <img width="300" src="/NFT02/001n/tadpole.png" alt="蝌蚪">
+    <img width="300" src="/NFT02/001n/tadpole.png" alt="蝌蚪">
+    <img width="300" src="/NFT02/001n/tadpole.png" alt="蝌蚪">
+    </div>
+    <img width="300" src="/NFT02/001n/tadpole.png" alt="蝌蚪">
+
+    
     
 
     

@@ -36,4 +36,7 @@ td:hover{
 th:hover{background-color: blue;
     
 }
+p:hover{
+    background-color: aqua; width: 150px;
+}
 /* hover鼠標覆蓋變色 */
