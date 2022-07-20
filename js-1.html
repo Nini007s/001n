@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分頁2</title>
+    <!-- 打分數系統 -->
+    <script>
+        var n1 = prompt("請輸入分數:");
+        if (n1>=90)
+        alert("你超棒!")
+        // else if多建立一個條件
+        else if (n1<90 && n1>=80)
+        alert("還不錯喔!") 
+
+        else if (n1<80 && n1>=70)
+        alert("還可以!繼續加油") 
+
+        else  (n1<70 && n1>=60)
+        alert("請再加油!")
+        // 最後一個不用加if
+    </script>
+</head>
+<body>
+    <h2>分頁二</h2>
+    <ol type="I" style="color: rgb(246, 61, 92);">
+        <li>打分數系統</li>
+        <li>事件處理器</li>
+    </ol>
+    <a href="./js.html">回首頁</a>
+    <!-- Onclick練習 -->
+    <botton onclick="javascript:document.getElementById('show').innerHTML='<h2>hellow</h2>'">顯示資訊</botton>
+    <!-- onclick事件="執行程式"     -->  
+    <botton onclick="javascript:document.getElementById('show').innerHTML='<h2 style=color:pink;>hellow</p>'">粉紅色</botton>  
+        <botton onclick="javascript:document.getElementById('show').innerHTML=''">隱藏資訊</botton>  
+    <p id="show"></p>  
+    <!-- 加上最後總結 -->
+
+    
+</body>
+</html>
